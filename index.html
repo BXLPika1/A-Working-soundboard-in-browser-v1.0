@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Mode Soundboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="pageTitle">Soundboards</h1>
+  </header>
+
+  <main>
+    <!-- Soundboards List Page -->
+    <section id="soundboardsPage" class="page">
+      <button id="addSoundboardBtn" class="add-btn" title="Add Soundboard">📁</button>
+      <ul id="soundboardsList" class="list"></ul>
+    </section>
+
+    <!-- Soundboard Detail Page -->
+    <section id="soundboardDetailPage" class="page hidden">
+      <button id="backToSoundboardsBtn" class="back-btn" title="Back">← Back</button>
+      <h2 id="soundboardName"></h2>
+      <button id="addAudioBtn" class="add-btn" title="Add Audio">🎧</button>
+      <input type="file" id="audioFileInput" accept=".mp3,.m4a,.ogg,.wav" multiple hidden />
+      <div id="audiosGrid" class="grid"></div>
+      <p id="emptyAudiosText" class="empty-text hidden">No audios. Add some!</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
